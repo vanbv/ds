@@ -8,7 +8,7 @@ import com.vaadin.flow.router.*;
 
 import javax.servlet.http.HttpServletResponse;
 
-@Route("ROUTE")
+@Route(RouteNotFoundError.ROUTE)
 public class RouteNotFoundError extends VerticalLayout implements HasErrorParameter<NotFoundException> {
 
     public static final String ROUTE = "404";

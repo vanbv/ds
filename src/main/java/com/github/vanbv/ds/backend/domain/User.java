@@ -8,8 +8,9 @@ import java.util.Collections;
 
 public class User implements UserDetails {
 
-    private long id;
+    private int id;
     private String email;
+    private String mobile;
     private String password;
     private Role role;
 
@@ -48,11 +49,11 @@ public class User implements UserDetails {
         return true;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -62,6 +63,14 @@ public class User implements UserDetails {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
     public void setPassword(String password) {
